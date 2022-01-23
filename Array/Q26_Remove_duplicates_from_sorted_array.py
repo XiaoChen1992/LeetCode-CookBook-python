@@ -19,6 +19,8 @@ class Solution:
         return len(nums) - counter
 
     def removeDuplicates_v2(self, nums: List[int]) -> int:
+        # two pointers, counter and i. init counter = 0 and i = 1
+        # the left part of counter means processed part.
         # special case
         if len(nums) == 0:
             return 0
