@@ -16,12 +16,12 @@ class Solution:
             'M':1000
         }
         
-        res = []
+        res = ''
         for k, v in reversed(a.items()):
             while num > 0:
                 if v <= num:
-                    res.append(k)
+                    res += k
                     num -= v
                 else:
                     break
-        return ''.join(res)
+        return res
